@@ -31,6 +31,12 @@ button,select,input{font:inherit}.add{width:100%;padding:13px;border:0;border-ra
 footer{border-top:1px solid #222;padding:30px 6%;display:flex;justify-content:space-between;color:#777;gap:20px;flex-wrap:wrap}
 @media(max-width:650px){.nav a{display:none}.hero{min-height:70vh}.title h2{font-size:32px}}
 </style>
+
+<style>
+@media(max-width:700px){
+  #grey-hoodie > div:nth-child(2){grid-template-columns:1fr!important}
+}
+</style>
 </head>
 <body>
 <header>
@@ -80,6 +86,23 @@ footer{border-top:1px solid #222;padding:30px 6%;display:flex;justify-content:sp
 <button class="add" onclick="add('Vnted Oversized Tee',34.90)">IN DEN WARENKORB</button></div>
 </article>
 
+</div>
+</section>
+
+
+<section id="grey-hoodie">
+<div class="title"><h2>VNTED GREY HOODIE</h2><span class="muted">LUXURY EDITION</span></div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px">
+  <div class="card"><div class="pic" style="height:auto;background:#111"><img src="assets/vnted-grey-hoodie-back.png" alt="VNTED Grey Hoodie – Rückseite" loading="lazy" style="aspect-ratio:1/1;object-fit:cover"></div></div>
+  <div class="card"><div class="pic" style="height:auto;background:#111"><img src="assets/vnted-grey-hoodie-front-back.png" alt="VNTED Grey Hoodie – Vorder- und Rückansicht" loading="lazy" style="aspect-ratio:1/1;object-fit:cover"></div></div>
+</div>
+<div class="card" style="margin-top:18px;padding:22px">
+  <div class="tag">NEW / LUXURY EDITION</div>
+  <h3 style="font-size:28px;margin:8px 0">VNTED Grey Hoodie</h3>
+  <p class="muted" style="max-width:720px;line-height:1.7">Oversized Hoodie in Grau mit dezenter VINTED LRNZ Rückenveredelung und cleanem Premium-Look.</p>
+  <div class="price" style="font-size:20px">79,90 €</div>
+  <div class="sizes"><button class="size active" onclick="pick(this)">S</button><button class="size" onclick="pick(this)">M</button><button class="size" onclick="pick(this)">L</button><button class="size" onclick="pick(this)">XL</button></div>
+  <button class="add" onclick="add('VNTED Grey Hoodie',79.90)">IN DEN WARENKORB</button>
 </div>
 </section>
 
